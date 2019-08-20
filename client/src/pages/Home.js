@@ -8,6 +8,7 @@ import NewsSearch from "../components/NewsSearch";
 import TwitterSearch from "../components/TwitterSearch";
 import Formatted_Buttons from "../components/Formatted_Buttons";
 import Blank_Search from "../components/Blank_Search";
+import ClearSearch from "../components/ClearSearch"
 
 class Home extends Component {
   constructor(props) {
@@ -52,6 +53,10 @@ class Home extends Component {
       .then(res => this.fetchButtons())
       .catch(err => console.log(err));
   };
+
+  clearSearch = () => {
+    
+  }
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -397,6 +402,7 @@ class Home extends Component {
                     >
                       <div className="row collapse-headline">
                         <h3>Search Results</h3>
+                        <ClearSearch />
                       </div>
                     </button>
                   </h5>

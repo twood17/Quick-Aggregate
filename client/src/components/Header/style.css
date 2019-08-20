@@ -270,3 +270,11 @@ and (-webkit-device-pixel-ratio : 3)
     margin-left: 1rem;
   }
 }
+
+/* dual screen monitor */
+
+@media only screen and (max-device-width :1200px) {
+  .login-button {
+    font-size: 12px;
+  }
+}
